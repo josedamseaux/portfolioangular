@@ -5,3 +5,10 @@ export interface infoPagina {
   pagina_autor?: string;
   instagram?: string;
 }
+
+export interface infoEquipo {
+  instagram?: string,
+  nombre?:string,
+  subtitulo?:string,
+  url?:string;
+}

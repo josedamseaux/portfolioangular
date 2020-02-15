@@ -1,4 +1,4 @@
-<header class="ae-container-fluid ae-container-fluid--full rk-header header">
+<header class="ae-container-fluid ae-container-fluid--full rk-header mb-4 header">
     <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
     <label for="mobile-menu">
       <svg>
@@ -11,23 +11,27 @@
         <use xlink:href="assets/img/symbols.svg#bar"></use>
       </svg>
     </label>
-    <div class="ae-container-fluid rk-topbar mb-1">
-      <h1 class="rk-logo">
-        <a routerLink="home">{{_servicio.info.titulo}}<sup>tm</sup></a>
+
+    
+    <div class="ae-container-fluid rk-topbar header2">
+      <h1 class="mb-4">
+        <a routerLink="home" class="mb-4">{{_servicio.info.titulo}}</a>
       </h1>
       <nav class="rk-navigation">
         <ul class="rk-menu">
-          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="home"   class="rk-menu__link">Home</a>
+          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="home"   class="rk-menu__link">home</a>
           </li>
-          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="portfolio" class="rk-menu__link">Portfolio</a>
+          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="portfolio" class="rk-menu__link">portfolio</a>
           </li>
-          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="about" class="rk-menu__link">About</a></li>
+          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="about" class="rk-menu__link">about</a></li>
 
-          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="contact" class="rk-menu__link">Contact Us</a>
+          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="contact" class="rk-menu__link">contact us</a>
           </li>
-          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="items" class="rk-menu__link">Items</a>
+          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="items" class="rk-menu__link">items</a>
           </li>
         </ul>
+
+
         <form class="rk-search">
           <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
           <label for="urku-search">

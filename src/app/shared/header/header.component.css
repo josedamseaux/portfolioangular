@@ -1,6 +1,18 @@
 header {
-    background-color:rgb(255, 185, 223) ;
+    background-color: rgb(255, 209, 216);
 }
+
+
+.header2 {
+    margin-top: -10px;
+}
+
+
+h1 {
+    font-family: 'Martel', serif;
+    font-size: 200%;
+}
+
 
 header {
     height: 20%;
