@@ -27,15 +27,6 @@ svg rect{
   animation-fill-mode: both;
 }
 
-.animated.fast {
-  -webkit-animation-duration: 800ms;
-  animation-duration: 800ms;
-}
-
-.animated.faster {
-  -webkit-animation-duration: 500ms;
-  animation-duration: 500ms;
-}
 
 @-webkit-keyframes fadeIn {
   from {
