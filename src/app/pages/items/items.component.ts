@@ -10,18 +10,15 @@ import { ProductoDescripcion } from 'src/app/interfaces/producto-descripcion.int
 })
 export class ItemsComponent implements OnInit  {
 
-
   producto: ProductoDescripcion;
   id: string;
-
-
-
 
 
   constructor(private route: ActivatedRoute,
               public productosService: ProductosService) { }
 
   ngOnInit() {
+
 
     this.route.params.
     subscribe( parametros => {

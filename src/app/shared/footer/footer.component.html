@@ -1,46 +1,35 @@
-<footer class="ae-container-fluid rk-footer ">
-    <div class="ae-grid ae-grid--collapse">
-      <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
-        <ul class="rk-menu rk-footer-menu">
-          <li class="rk-menu__item"><a href="about.html" class="rk-menu__link">acerca de</a>
+<footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">{{ _servicio.info.titulo }}</h5>
+          <h5 class="white-text">{{anio}} <br> {{ _servicio.info.email }} </h5>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <ul>
+           <li> <a href="#0" class="rk-social-btn ">
+              <svg>
+                  <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#0" class="rk-social-btn ">
+                <svg>
+                  <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
+                </svg>
+            </a>
+            <a href="#0" class="rk-social-btn ">
+              <svg>
+                <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
+              </svg>
+            </a>
           </li>
-          <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">contacto</a>
-          </li>
-        </ul>
-        <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold"></span><span class="ae-u-bolder">{{anio}} GLITTER EMPIRE </span>all rights reserved.</p>
-     </div>
-
-
-      <div class="ae-grid__item item-lg-4 au-xs-ta-center">
-
-        <a href="#0" class="rk-social-btn ">
-          <svg>
-              <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
-          </svg>
-        </a>
-          
-          
-          <a href="#0" class="rk-social-btn ">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
-            </svg>
-           </a>
-          
-          <a target="_blank" [href]="_servicios.info.instagram" class="rk-social-btn ">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
-            </svg>
-        </a>
-      </div>
-
-      <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
-        <p class="rk-footer__text rk-footer__contact "> 
-          <span class="rk-dark-color ae-u-bold">Email: </span>
-          <span class="ae-u-bold">
-          <a href="mailTo:{{_servicios.info.email}}" class="rk-dark-color ">{{_servicios.info.email}} </a>
-        </span>
-      </p>
-
+          </ul>
+        </div>
       </div>
     </div>
-  </footer>
+    <div class="footer-copyright">
+      <div class="container">
+      © all rights reserved.
+      </div>
+    </div>
+</footer>

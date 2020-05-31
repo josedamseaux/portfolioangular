@@ -1,19 +1,33 @@
-header {
-    background-color: rgb(255, 209, 216);
+
+
+* {
+    color:white;
 }
 
-
-.header2 {
-    margin-top: -10px;
+::placeholder {
+    color:white;
+    text-align: center;
+    font-size: 14px;
+    size: 5px;
 }
 
+input {
+    size: 5px !important;
 
-h1 {
-    font-family: 'Martel', serif;
-    font-size: 200%;
 }
 
+a:hover{
+color:white;
+}
 
-header {
-    height: 20%;
+#title {
+    font-size: 2rem;
+    left: 0px !important;
+
+}
+
+.container {
+    margin-right: 45px !important;
+    left: 0;
+
 }

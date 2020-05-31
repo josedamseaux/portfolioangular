@@ -5,9 +5,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ItemsComponent } from './pages/items/items.component';
 import { SearchComponent } from './pages/search/search.component';
 
-
-
-const app_routes : Routes = [
+const app_routes: Routes = [
 
     {path: 'home', component: PortafolioComponent},
     {path: 'about', component: AboutComponent},
@@ -24,11 +22,8 @@ const app_routes : Routes = [
     exports: [
         RouterModule
     ]
-
 })
 
 
 export class AppRoutingModule {
-
-
 }       

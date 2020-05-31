@@ -12,7 +12,6 @@ export class ProductosService {
   productos: Producto[] = [];
   productosFiltrados: Producto[] = [];
 
-
   constructor(private http: HttpClient) { 
 
   this.cargarProductos();
@@ -33,6 +32,7 @@ export class ProductosService {
     });
 });
 
+
 }
   getProducto(id: string){
     return this.http.get(`https://glitter-html.firebaseio.com/productos/${id}.json`);
@@ -51,8 +51,8 @@ export class ProductosService {
     } else {
       //aplicar el filtro
       this.filtrarProductos(termino);
+  
     }
-
   }
     
   private filtrarProductos(termino: string){

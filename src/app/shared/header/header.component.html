@@ -1,50 +1,39 @@
-<header class="ae-container-fluid ae-container-fluid--full rk-header mb-4 header">
-    <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
-    <label for="mobile-menu">
-      <svg>
-        <use xlink:href="assets/img/symbols.svg#bar"></use>
-      </svg>
-      <svg>
-        <use xlink:href="assets/img/symbols.svg#bar"></use>
-      </svg>
-      <svg>
-        <use xlink:href="assets/img/symbols.svg#bar"></use>
-      </svg>
-    </label>
+<nav class="nav-wrapper">
+  <div class="container">
+      <a routerLink="home" id="title"> {{ _servicio.info.titulo }}</a>
+      <a href="" data-target="menu-responsivo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
 
-    
-    <div class="ae-container-fluid rk-topbar header2">
-      <h1 class="mb-4">
-        <a routerLink="home" class="mb-4">{{_servicio.info.titulo}}</a>
-      </h1>
-      <nav class="rk-navigation">
-        <ul class="rk-menu">
-          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="home"   class="rk-menu__link">home</a>
-          </li>
-          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="portfolio" class="rk-menu__link">portfolio</a>
-          </li>
-          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="about" class="rk-menu__link">about</a></li>
+    <ul class="right hide-on-med-and-down">
+      <li routerLinkActive="active"><a routerLink="home">home</a>
+      </li>
+      <li routerLinkActive="active"><a routerLink="about">about</a>
+      </li>
+      <li routerLinkActive="active"><a routerLink="items" >items</a>
+      </li>
+      <li><input type="text" 
+        (keyup.enter)="buscarProducto(txtBuscar.value)"
+        placeholder="buscar" 
+        id="" 
+        class="white-text"
+        #txtBuscar>
+      </li>
+    </ul>
 
-          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="contact" class="rk-menu__link">contact us</a>
-          </li>
-          <li routerLinkActive="active" class="rk-menu__item"><a routerLink="items" class="rk-menu__link">items</a>
-          </li>
-        </ul>
+  </div>
+
+  
+<ul class="sidenav" id="menu-responsivo">
+  <li><a routerLink="home">home</a>
+  </li>
+  <li><a routerLink="about">about</a>
+  </li>
+  <li><a routerLink="items" >items</a>
+  </li>
+</ul>
 
 
-        <div class="rk-search">
-          <input type="text" 
-          (keyup.enter)="buscarProducto(txtBuscar.value)"
-          placeholder="buscar" 
-          id="urku-search" 
-          class="rk-search-field"
-          #txtBuscar>
-          <label for="urku-search">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#icon-search"></use>
-            </svg>
-          </label>
-        </div>
-      </nav>
-    </div>
-</header>
+
+</nav>
+

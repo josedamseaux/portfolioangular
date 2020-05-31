@@ -10,5 +10,5 @@ export class AboutComponent {
 
   constructor(public _servicios: InfoPaginaService) {}
 
-  ngOnInit() {}
+
 }
